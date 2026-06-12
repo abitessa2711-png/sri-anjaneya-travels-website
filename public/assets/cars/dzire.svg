@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Car Body Gradients -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    
+    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="400" cy="380" rx="310" ry="22" fill="#000000" opacity="0.6" />
+  
+  <!-- Car Group -->
+  <g filter="url(#dropShadow)">
+    <!-- Car Body Silhouette (Sedan profile) -->
+    <!-- Lower Body -->
+    <path d="M130 340 L125 305 C125 290 140 270 165 270 L210 270 C230 225 270 175 340 165 L540 165 C570 165 595 185 620 225 L680 270 L730 270 C750 270 765 290 760 310 L750 340 L700 340 A 55 55 0 0 0 590 340 L275 340 A 55 55 0 0 0 165 340 Z" fill="url(#bodyGrad)" />
+
+    <!-- Roof & Pillars -->
+    <path d="M330 167 L530 167 C555 167 580 185 595 215 L625 260 L290 260 Z" fill="#0a0f1d" />
+
+    <!-- Windows -->
+    <path d="M340 175 L430 175 L430 250 L310 250 Z" fill="url(#windowGrad)" opacity="0.9" />
+    <path d="M445 175 L530 175 L555 250 L445 250 Z" fill="url(#windowGrad)" opacity="0.9" />
+    <path d="M542 175 L580 175 L600 250 L558 250 Z" fill="url(#windowGrad)" opacity="0.7" />
+
+    <!-- Windshield Divider Lines -->
+    <line x1="438" y1="167" x2="438" y2="260" stroke="#475569" stroke-width="5" />
+    <line x1="538" y1="167" x2="538" y2="260" stroke="#475569" stroke-width="5" />
+
+    <!-- Headlights & Grill details -->
+    <path d="M635 245 L675 250 L665 270 L625 260 Z" fill="#f8fafc" />
+    <path d="M650 250 L670 253 L663 265 L645 260 Z" fill="#60a5fa" />
+    <path d="M125 298 L145 296 L148 312 L127 314 Z" fill="#dc2626" /> <!-- Taillight -->
+
+    <!-- Door Handles -->
+    <rect x="320" y="270" width="28" height="6" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1" />
+    <rect x="490" y="270" width="28" height="6" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1" />
+
+    <!-- Character Lines -->
+    <path d="M210 295 Q400 310 640 285" stroke="#cbd5e1" stroke-width="2" fill="none" opacity="0.5" />
+
+    <!-- Front Wheel Arch and Wheel -->
+    <circle cx="220" cy="340" r="58" fill="#090d16" />
+    <circle cx="220" cy="340" r="46" fill="url(#wheelGrad)" />
+    <circle cx="220" cy="340" r="24" fill="#94a3b8" />
+    <circle cx="220" cy="340" r="6" fill="#1e293b" />
+    <line x1="220" y1="294" x2="220" y2="386" stroke="#ffffff" stroke-width="3" />
+    <line x1="174" y1="340" x2="266" y2="340" stroke="#ffffff" stroke-width="3" />
+    <line x1="187" y1="307" x2="253" y2="373" stroke="#ffffff" stroke-width="3" />
+    <line x1="187" y1="373" x2="253" y2="307" stroke="#ffffff" stroke-width="3" />
+
+    <!-- Rear Wheel Arch and Wheel -->
+    <circle cx="600" cy="340" r="58" fill="#090d16" />
+    <circle cx="600" cy="340" r="46" fill="url(#wheelGrad)" />
+    <circle cx="600" cy="340" r="24" fill="#94a3b8" />
+    <circle cx="600" cy="340" r="6" fill="#1e293b" />
+    <line x1="600" y1="294" x2="600" y2="386" stroke="#ffffff" stroke-width="3" />
+    <line x1="554" y1="340" x2="646" y2="340" stroke="#ffffff" stroke-width="3" />
+    <line x1="567" y1="307" x2="633" y2="373" stroke="#ffffff" stroke-width="3" />
+    <line x1="567" y1="373" x2="633" y2="307" stroke="#ffffff" stroke-width="3" />
+  </g>
+
+  <!-- Text Badge -->
+  <text x="400" y="420" font-family="'Outfit', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#64748b" text-anchor="middle" letter-spacing="4">MARUTI SUZUKI SWIFT DZIRE</text>
+</svg>

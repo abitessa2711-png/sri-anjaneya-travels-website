@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="60%" r="60%" fx="50%" fy="60%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+    
+    <!-- Car Body Gradients -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    
+    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="400" cy="380" rx="320" ry="25" fill="#000000" opacity="0.6" />
+  
+  <!-- Car Group -->
+  <g filter="url(#dropShadow)">
+    <!-- Car Body Silhouette (Side/Three-Quarter View style) -->
+    <!-- Lower Body -->
+    <path d="M120 340 L120 300 C120 280 140 260 170 260 L240 260 C260 210 290 160 360 150 L620 150 C660 150 700 180 720 220 L760 290 C780 310 770 340 740 340 L700 340 A 55 55 0 0 0 590 340 L290 340 A 55 55 0 0 0 180 340 Z" fill="url(#bodyGrad)" />
+
+    <!-- Roof & Pillars -->
+    <path d="M350 152 L610 152 C640 152 660 170 670 190 L710 250 L310 250 Z" fill="#090d16" />
+
+    <!-- Windows -->
+    <path d="M360 160 L460 160 L460 240 L330 240 Z" fill="url(#windowGrad)" opacity="0.9" />
+    <path d="M475 160 L575 160 L575 240 L475 240 Z" fill="url(#windowGrad)" opacity="0.9" />
+    <path d="M590 160 L650 160 L685 240 L590 240 Z" fill="url(#windowGrad)" opacity="0.9" />
+
+    <!-- Windshield Divider Lines -->
+    <line x1="468" y1="152" x2="468" y2="250" stroke="#475569" stroke-width="6" />
+    <line x1="582" y1="152" x2="582" y2="250" stroke="#475569" stroke-width="6" />
+
+    <!-- Headlights & Grill details -->
+    <path d="M720 240 L760 242 L750 265 L710 255 Z" fill="#f8fafc" />
+    <path d="M735 245 L755 247 L747 260 L730 255 Z" fill="#38bdf8" />
+    <path d="M120 295 L140 292 L145 310 L122 312 Z" fill="#ef4444" /> <!-- Taillight -->
+
+    <!-- Character Lines / Panel Gaps -->
+    <path d="M180 260 L280 260 L320 340" stroke="#94a3b8" stroke-width="2" fill="none" opacity="0.5" />
+    <path d="M320 250 L320 340" stroke="#475569" stroke-width="2" fill="none" />
+    <path d="M520 250 L520 340" stroke="#475569" stroke-width="2" fill="none" />
+    <path d="M260 290 Q450 300 700 270" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.4" /> <!-- Chrome strip -->
+
+    <!-- Door Handles -->
+    <rect x="340" y="265" width="30" height="8" rx="4" fill="#64748b" stroke="#ffffff" stroke-width="1" />
+    <rect x="540" y="265" width="30" height="8" rx="4" fill="#64748b" stroke="#ffffff" stroke-width="1" />
+
+    <!-- Front Wheel Arch and Wheel -->
+    <circle cx="235" cy="340" r="62" fill="#090d16" />
+    <circle cx="235" cy="340" r="50" fill="url(#wheelGrad)" />
+    <!-- Rims / Spokes -->
+    <circle cx="235" cy="340" r="28" fill="#94a3b8" />
+    <circle cx="235" cy="340" r="8" fill="#cbd5e1" />
+    <line x1="235" y1="290" x2="235" y2="390" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="185" y1="340" x2="285" y2="340" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="200" y1="305" x2="270" y2="375" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="200" y1="375" x2="270" y2="305" stroke="#cbd5e1" stroke-width="4" />
+
+    <!-- Rear Wheel Arch and Wheel -->
+    <circle cx="645" cy="340" r="62" fill="#090d16" />
+    <circle cx="645" cy="340" r="50" fill="url(#wheelGrad)" />
+    <!-- Rims / Spokes -->
+    <circle cx="645" cy="340" r="28" fill="#94a3b8" />
+    <circle cx="645" cy="340" r="8" fill="#cbd5e1" />
+    <line x1="645" y1="290" x2="645" y2="390" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="595" y1="340" x2="695" y2="340" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="610" y1="305" x2="680" y2="375" stroke="#cbd5e1" stroke-width="4" />
+    <line x1="610" y1="375" x2="680" y2="305" stroke="#cbd5e1" stroke-width="4" />
+  </g>
+
+  <!-- Text Badge -->
+  <text x="400" y="420" font-family="'Outfit', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="4">TOYOTA INNOVA CRYSTA</text>
+</svg>
