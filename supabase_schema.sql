@@ -255,10 +255,14 @@ create policy "Users can view own ID proof" on storage.objects
 -- Populate Cars
 insert into public.cars (id, name, image_url, seating_capacity, ac_non_ac, fuel_type, transmission, self_drive, taxi_service, price_per_day, is_available)
 values 
-  ('c1000000-0000-0000-0000-000000000001', 'Toyota Innova Crysta', '/assets/cars/innova_crysta.png', 7, true, 'Diesel', 'Manual', true, true, 2500, true),
-  ('c2000000-0000-0000-0000-000000000002', 'Maruti Baleno', '/assets/cars/baleno.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true),
-  ('c3000000-0000-0000-0000-000000000003', 'Maruti Swift Dzire', '/assets/cars/swift_dzire.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true),
-  ('c4000000-0000-0000-0000-000000000004', 'Hyundai Aura', '/assets/cars/hyundai_aura.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true)
+  ('c1000000-0000-0000-0000-000000000001', 'Suzuki Ritz', '/assets/cars/suzuki_ritz.png', 5, true, 'Petrol/Diesel', 'Manual', true, true, 1800, true),
+  ('c2000000-0000-0000-0000-000000000002', 'Toyota Innova Crysta', '/assets/cars/innova_crysta.png', 7, true, 'Diesel', 'Manual', true, true, 2500, true),
+  ('c3000000-0000-0000-0000-000000000003', 'Honda Amaze', '/assets/cars/honda_amaze.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true),
+  ('c4000000-0000-0000-0000-000000000004', 'Hyundai Aura', '/assets/cars/hyundai_aura.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true),
+  ('c5000000-0000-0000-0000-000000000005', 'Toyota Etios Liva', '/assets/cars/etios_liva.png', 5, true, 'Diesel/Petrol', 'Manual', true, true, 1800, true),
+  ('c6000000-0000-0000-0000-000000000006', 'Tata Punch', '/assets/cars/tata_punch.png', 5, true, 'Petrol', 'Manual', true, true, 2000, true),
+  ('c7000000-0000-0000-0000-000000000007', 'Suzuki Ertiga', '/assets/cars/suzuki_ertiga.png', 7, true, 'Petrol/CNG', 'Manual', true, true, 2500, true),
+  ('c8000000-0000-0000-0000-000000000008', 'Tata Indica', '/assets/cars/tata_indica.png', 5, true, 'Diesel', 'Manual', true, true, 1600, true)
 on conflict (id) do nothing;
 
 -- Populate Gallery
@@ -267,14 +271,14 @@ values
   ('a1000000-0000-0000-0000-000000000001', '/assets/flyer_1.jpg', 'Business Class Fleet Banner', 'Events'),
   ('a2000000-0000-0000-0000-000000000002', '/assets/flyer_2.jpg', 'Self Driving Car Services', 'Events'),
   ('a3000000-0000-0000-0000-000000000003', '/assets/cars/innova_crysta.png', 'Toyota Innova Crysta ready for highway rental', 'Vehicles'),
-  ('a4000000-0000-0000-0000-000000000004', '/assets/cars/baleno.png', 'Premium Hatchback Fleet', 'Vehicles')
+  ('a4000000-0000-0000-0000-000000000004', '/assets/cars/suzuki_ritz.png', 'Premium Hatchback Fleet', 'Vehicles')
 on conflict (id) do nothing;
 
 -- Populate Reviews
 insert into public.reviews (id, name, rating, comment, approved)
 values 
   ('b1000000-0000-0000-0000-000000000001', 'Ramesh Kumar', 5, 'Highly recommend Sri Anjaneya travels! The Toyota Innova was in pristine condition, clean and drove smoothly. Very professional customer service.', true),
-  ('b2000000-0000-0000-0000-000000000002', 'Suresh Raina', 4, 'Booked Swift Dzire for outstation trip. The driver was polite and punctual. Clean vehicle and reasonable prices. Will use again.', true),
-  ('b3000000-0000-0000-0000-000000000003', 'Meera Krishnan', 5, 'Great experience with self-driving Baleno rental. Simple booking process and quick document verification. Extremely trustworthy.', true)
+  ('b2000000-0000-0000-0000-000000000002', 'Suresh Raina', 4, 'Booked Suzuki Ertiga for outstation trip. The driver was polite and punctual. Clean vehicle and reasonable prices. Will use again.', true),
+  ('b3000000-0000-0000-0000-000000000003', 'Meera Krishnan', 5, 'Great experience with self-driving Suzuki Ritz rental. Simple booking process and quick document verification. Extremely trustworthy.', true)
 on conflict (id) do nothing;
 

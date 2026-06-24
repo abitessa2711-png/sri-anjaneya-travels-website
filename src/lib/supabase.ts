@@ -71,7 +71,20 @@ interface GalleryItem {
 // Initial Mock Seed Data
 const initialCars: Car[] = [
   {
-    id: 'c1-toyota-innova',
+    id: 'c1-suzuki-ritz',
+    name: 'Suzuki Ritz',
+    image_url: '/assets/cars/suzuki_ritz.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Petrol/Diesel',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1800,
+    is_available: true
+  },
+  {
+    id: 'c2-toyota-innova',
     name: 'Toyota Innova Crysta',
     image_url: '/assets/cars/innova_crysta.png',
     seating_capacity: 7,
@@ -80,33 +93,20 @@ const initialCars: Car[] = [
     transmission: 'Manual',
     self_drive: true,
     taxi_service: true,
-    price_per_day: 3500,
+    price_per_day: 2500,
     is_available: true
   },
   {
-    id: 'c2-maruti-baleno',
-    name: 'Maruti Baleno',
-    image_url: '/assets/cars/baleno.png',
+    id: 'c3-honda-amaze',
+    name: 'Honda Amaze',
+    image_url: '/assets/cars/honda_amaze.png',
     seating_capacity: 5,
     ac_non_ac: true,
     fuel_type: 'Petrol',
     transmission: 'Manual',
     self_drive: true,
     taxi_service: true,
-    price_per_day: 1800,
-    is_available: true
-  },
-  {
-    id: 'c3-swift-dzire',
-    name: 'Maruti Swift Dzire',
-    image_url: '/assets/cars/swift_dzire.png',
-    seating_capacity: 5,
-    ac_non_ac: true,
-    fuel_type: 'Petrol',
-    transmission: 'Manual',
-    self_drive: true,
-    taxi_service: true,
-    price_per_day: 1500,
+    price_per_day: 2000,
     is_available: true
   },
   {
@@ -116,10 +116,62 @@ const initialCars: Car[] = [
     seating_capacity: 5,
     ac_non_ac: true,
     fuel_type: 'Petrol',
-    transmission: 'Automatic',
+    transmission: 'Manual',
     self_drive: true,
     taxi_service: true,
-    price_per_day: 1700,
+    price_per_day: 2000,
+    is_available: true
+  },
+  {
+    id: 'c5-etios-liva',
+    name: 'Toyota Etios Liva',
+    image_url: '/assets/cars/etios_liva.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Diesel/Petrol',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1800,
+    is_available: true
+  },
+  {
+    id: 'c6-tata-punch',
+    name: 'Tata Punch',
+    image_url: '/assets/cars/tata_punch.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Petrol',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 2000,
+    is_available: true
+  },
+  {
+    id: 'c7-suzuki-ertiga',
+    name: 'Suzuki Ertiga',
+    image_url: '/assets/cars/suzuki_ertiga.png',
+    seating_capacity: 7,
+    ac_non_ac: true,
+    fuel_type: 'Petrol/CNG',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 2500,
+    is_available: true
+  },
+  {
+    id: 'c8-tata-indica',
+    name: 'Tata Indica',
+    image_url: '/assets/cars/tata_indica.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1600,
     is_available: true
   }
 ];
@@ -139,7 +191,7 @@ const initialReviews: Review[] = [
     user_id: null,
     name: 'Suresh Raina',
     rating: 4,
-    comment: 'Booked Swift Dzire for outstation trip. The driver was polite and punctual. Clean vehicle and reasonable prices. Will use again.',
+    comment: 'Booked Suzuki Ertiga for outstation trip. The driver was polite and punctual. Clean vehicle and reasonable prices. Will use again.',
     approved: true,
     created_at: new Date().toISOString()
   },
@@ -148,7 +200,7 @@ const initialReviews: Review[] = [
     user_id: 'u2',
     name: 'Meera Krishnan',
     rating: 5,
-    comment: 'Great experience with self-driving Baleno rental. Simple booking process and quick document verification. Extremely trustworthy.',
+    comment: 'Great experience with self-driving Suzuki Ritz rental. Simple booking process and quick document verification. Extremely trustworthy.',
     approved: true,
     created_at: new Date().toISOString()
   }
@@ -178,7 +230,7 @@ const initialGallery: GalleryItem[] = [
   },
   {
     id: 'g4',
-    image_url: '/assets/cars/baleno.png',
+    image_url: '/assets/cars/suzuki_ritz.png',
     title: 'Premium Hatchback Fleet',
     category: 'Vehicles',
     created_at: new Date().toISOString()

@@ -29,6 +29,18 @@ function InstagramIcon({ className }: { className?: string }) {
 // Static car configurations with 12-hour prices
 const carsList = [
   {
+    id: 'suzuki-ritz',
+    name: 'Suzuki Ritz',
+    image_url: '/assets/cars/suzuki_ritz.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Petrol/Diesel',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1800, // 12-hour price: ₹1800
+  },
+  {
     id: 'toyota-innova',
     name: 'Toyota Innova Crysta',
     image_url: '/assets/cars/innova_crysta.png',
@@ -41,21 +53,9 @@ const carsList = [
     price_per_day: 2500, // 12-hour price: ₹2500
   },
   {
-    id: 'maruti-baleno',
-    name: 'Maruti Baleno',
-    image_url: '/assets/cars/baleno.png',
-    seating_capacity: 5,
-    ac_non_ac: true,
-    fuel_type: 'Petrol',
-    transmission: 'Manual',
-    self_drive: true,
-    taxi_service: true,
-    price_per_day: 2000, // 12-hour price: ₹2000
-  },
-  {
-    id: 'swift-dzire',
-    name: 'Maruti Swift Dzire',
-    image_url: '/assets/cars/swift_dzire.png',
+    id: 'honda-amaze',
+    name: 'Honda Amaze',
+    image_url: '/assets/cars/honda_amaze.png',
     seating_capacity: 5,
     ac_non_ac: true,
     fuel_type: 'Petrol',
@@ -75,6 +75,54 @@ const carsList = [
     self_drive: true,
     taxi_service: true,
     price_per_day: 2000, // 12-hour price: ₹2000
+  },
+  {
+    id: 'etios-liva',
+    name: 'Toyota Etios Liva',
+    image_url: '/assets/cars/etios_liva.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Diesel/Petrol',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1800, // 12-hour price: ₹1800
+  },
+  {
+    id: 'tata-punch',
+    name: 'Tata Punch',
+    image_url: '/assets/cars/tata_punch.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Petrol',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 2000, // 12-hour price: ₹2000
+  },
+  {
+    id: 'suzuki-ertiga',
+    name: 'Suzuki Ertiga',
+    image_url: '/assets/cars/suzuki_ertiga.png',
+    seating_capacity: 7,
+    ac_non_ac: true,
+    fuel_type: 'Petrol/CNG',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 2500, // 12-hour price: ₹2500
+  },
+  {
+    id: 'tata-indica',
+    name: 'Tata Indica',
+    image_url: '/assets/cars/tata_indica.png',
+    seating_capacity: 5,
+    ac_non_ac: true,
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    self_drive: true,
+    taxi_service: true,
+    price_per_day: 1600, // 12-hour price: ₹1600
   }
 ];
 
