@@ -177,8 +177,8 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-orange-500 shrink-0 mt-0.5" />
                 <span className="text-slate-400">
-                  61-K, Kallar Street,<br />
-                  Illupur Rd, Kallukuzhi,<br />
+                  61, Illupur Main Rd,<br />
+                  Sangillyandapuram,<br />
                   Trichy - 620020
                 </span>
               </li>
